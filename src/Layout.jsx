@@ -4,13 +4,11 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <div className="layout-container">
-      {/* Aquí puedes agregar un navbar si lo necesitas */}
       <main>
-        <Outlet />
+        <Outlet /> {/* Esto carga el contenido de cada ruta */}
       </main>
     </div>
   );
 };
 
 export default Layout;
-

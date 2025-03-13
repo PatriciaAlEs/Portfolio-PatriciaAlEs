@@ -10,12 +10,12 @@ const projects = [
     improvements: "Agregar un sistema de seguimiento de libros y recomendaciones automáticas basadas en intereses.",
     technologies: ["React", "Python", "MySQL", "CSS"],
     link: "https://github.com/4GeeksAcademy/HooBoo",
-    image: "src/img/hooboo.png", // Cambia por la imagen real del proyecto
+    image: "src/img/hooboo.png", 
   },
-  // Puedes añadir más proyectos aquí
+  
 ];
 
-const ProjectCards = () => {
+const ProjectCard = () => {
   return (
     <div className="projects-container">
       <h2 className="projects-title">Mis Proyectos</h2>
@@ -36,4 +36,4 @@ const ProjectCards = () => {
   );
 };
 
-export default ProjectCards;
+export default ProjectCard;

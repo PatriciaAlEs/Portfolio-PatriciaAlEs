@@ -2,10 +2,19 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { useNavigate } from "react-router-dom";  // 👈 Importar correctamente
 import "@fontsource/orbitron";
 import "../../styles/index.css";
+import ProjectCard from "./ProjectCard";
+
+
+
+
+
 
 const Portfolio = () => {
+  const navigate = useNavigate(); // 👈 Asegurar que está dentro del componente y del Router
+
   return (
     <div className="portfolio-container">
       <motion.div
@@ -14,6 +23,7 @@ const Portfolio = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
+        {/* Contenedor estilo postal */}
         <div className="portfolio-postal">
           {/* Sección Izquierda: Foto + Redes */}
           <div className="portfolio-left">
@@ -55,10 +65,15 @@ const Portfolio = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
+        onClick={() => navigate("/proyectos")}  // 👈 Redirige correctamente
+        style={{ cursor: "pointer" }}
       >
         <p className="portfolio-arrow-text">Ver proyectos</p>
         <IoMdArrowRoundForward className="portfolio-arrow-icon" />
       </motion.div>
+
+      {/* Sección de Proyectos */}
+      <ProjectCard />
     </div>
   );
 };
