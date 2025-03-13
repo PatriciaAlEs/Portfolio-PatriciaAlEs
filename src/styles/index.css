@@ -1,11 +1,161 @@
-/* 
+/* Estilos generales */
+.portfolio-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  font-family: "Orbitron", sans-serif;
+  padding: 20px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* Tarjeta principal (postal) */
+.portfolio-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(138, 43, 226, 0.8);
+  max-width: 600px;
+  border: 2px solid rgba(138, 43, 226, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 350px;
+  position: relative;
+}
 
-*/
+/* Contenedor estilo postal */
+.portfolio-postal {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Izquierda: Imagen y redes */
+.portfolio-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Imagen de perfil */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(138, 43, 226, 0.8);
+  margin-bottom: 1rem;
+}
+
+/* Iconos de redes sociales */
+.portfolio-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.portfolio-icon {
+  font-size: 2rem;
+  color: #b347ff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-icon:hover {
+  transform: scale(1.2);
+  color: #ff00ff;
+}
+
+/* Línea divisoria */
+.portfolio-divider {
+  width: 2px;
+  background-color: rgba(138, 43, 226, 0.8);
+  height: 80%;
+}
+
+/* Derecha: Información */
+.portfolio-right {
+  flex: 2;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.portfolio-title {
+  font-size: 1.8rem;
+  color: #b347ff;
+  text-shadow: 0 0 10px #b347ff;
+}
+
+.portfolio-description {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 0.5rem;
+}
+
+.portfolio-cta {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b347ff;
+}
+
+/* Flecha para ir a proyectos */
+.portfolio-arrow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.portfolio-arrow-text {
+  font-size: 1rem;
+  color: #b347ff;
+}
+
+.portfolio-arrow-icon {
+  font-size: 2rem;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 📱 Responsivo para pantallas pequeñas */
+@media (max-width: 600px) {
+  .portfolio-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .portfolio-postal {
+    flex-direction: column;
+  }
+
+  .portfolio-left {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .portfolio-divider {
+    width: 80%;
+    height: 2px;
+    margin: 10px 0;
+  }
+
+  .portfolio-right {
+    padding-left: 0;
+    text-align: center;
+  }
+}
