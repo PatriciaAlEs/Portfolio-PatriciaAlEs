@@ -10,7 +10,7 @@
   padding: 20px;
 }
 
-/* Tarjeta principal (postal) */
+
 .portfolio-card {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 2rem;
@@ -27,14 +27,14 @@
   position: relative;
 }
 
-/* Contenedor estilo postal */
+
 .portfolio-postal {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-/* Izquierda: Imagen y redes */
+
 .portfolio-left {
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@
   padding-right: 20px;
 }
 
-/* Imagen de perfil */
+
 .profile-image {
   width: 120px;
   height: 120px;
@@ -52,7 +52,7 @@
   margin-bottom: 1rem;
 }
 
-/* Iconos de redes sociales */
+
 .portfolio-links {
   display: flex;
   gap: 1rem;
@@ -70,14 +70,14 @@
   color: #ff00ff;
 }
 
-/* Línea divisoria */
+
 .portfolio-divider {
   width: 2px;
   background-color: rgba(138, 43, 226, 0.8);
   height: 80%;
 }
 
-/* Derecha: Información */
+
 .portfolio-right {
   flex: 2;
   text-align: left;
@@ -103,7 +103,6 @@
   color: #b347ff;
 }
 
-/* Flecha para ir a proyectos */
 .portfolio-arrow-container {
   display: flex;
   flex-direction: column;
