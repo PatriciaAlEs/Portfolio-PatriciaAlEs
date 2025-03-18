@@ -72,8 +72,6 @@ const Portfolio = () => {
         <IoMdArrowRoundForward className="portfolio-arrow-icon" />
       </motion.div>
 
-      {/* Sección de Proyectos */}
-      <ProjectCard />
     </div>
   );
 };

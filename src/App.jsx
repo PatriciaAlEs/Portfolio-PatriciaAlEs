@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
-import ProjectCard from "./js/components/ProjectCard";
+
+import Projects from "./pages/Projects.jsx"; //
 
 
 
@@ -11,7 +12,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="proyectos" element={<ProjectCard />} />
+        <Route path="proyectos" element={<Projects />} />
       </Route>
     </Routes>
   );

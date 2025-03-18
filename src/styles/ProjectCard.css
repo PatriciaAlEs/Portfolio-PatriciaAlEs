@@ -1,0 +1,83 @@
+/* Contenedor principal de los proyectos */
+.projects-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  /* Título principal */
+  .projects-title {
+    font-size: 2rem;
+    color: #b347ff;
+    text-shadow: 0 0 10px #b347ff;
+    margin-bottom: 20px;
+  }
+  
+  /* Diseño en grid para los proyectos */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  /* Tarjeta de proyecto */
+  .project-card {
+    background: rgba(40, 40, 40, 0.9);
+    border: 2px solid #b347ff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Imagen del proyecto */
+  .project-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #b347ff;
+  }
+  
+  /* Título del proyecto */
+  .project-title {
+    font-size: 1.5rem;
+    color: #b347ff;
+    margin-bottom: 10px;
+  }
+  
+  /* Descripción */
+  .project-description,
+  .project-challenges,
+  .project-improvements,
+  .project-technologies {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  /* Enlace a GitHub */
+  .project-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b347ff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .project-link:hover {
+    background-color: #ff00ff;
+  }
+  
